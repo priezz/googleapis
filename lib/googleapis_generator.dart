@@ -9,7 +9,7 @@ import "dart:convert";
 import "dart:io";
 
 import 'package:discoveryapis_generator/discoveryapis_generator.dart';
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart' if (dart.library.js) 'http_node.dart' as http;
 import 'package:io/ansi.dart' as ansi;
 import 'package:pool/pool.dart';
 

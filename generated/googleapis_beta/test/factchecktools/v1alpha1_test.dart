@@ -4,7 +4,7 @@ import "dart:core" as core;
 import "dart:async" as async;
 import "dart:convert" as convert;
 
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart' if (dart.library.js) 'http_node.dart' as http;
 import 'package:test/test.dart' as unittest;
 
 import 'package:googleapis_beta/factchecktools/v1alpha1.dart' as api;

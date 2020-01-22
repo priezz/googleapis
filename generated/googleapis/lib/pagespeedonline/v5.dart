@@ -8,7 +8,7 @@ import 'dart:core' as core;
 import 'dart:async' as async;
 
 import 'package:_discoveryapis_commons/_discoveryapis_commons.dart' as commons;
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart' if (dart.library.js) 'http_node.dart' as http;
 
 export 'package:_discoveryapis_commons/_discoveryapis_commons.dart'
     show ApiRequestError, DetailedApiRequestError;
